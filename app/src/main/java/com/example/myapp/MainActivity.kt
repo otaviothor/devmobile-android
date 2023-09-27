@@ -28,6 +28,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent);
     }
 
+    fun onTapOpenPassParamWithListButton(view: View) {
+        val intent = Intent(this, PassParamWithListActivity::class.java).apply {}
+        startActivity(intent);
+    }
+
     fun onTapInOtherButton(event: View) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("alert")
