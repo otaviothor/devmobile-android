@@ -15,6 +15,13 @@ class DynamicWebviewActivity : AppCompatActivity() {
             loadWithOverviewMode = true
             useWideViewPort = true
         }
-        webView.loadUrl("http://themekit.frontendmatter.com/dist/themes/social-1/profile.html");
+
+        val html_url = intent.getStringExtra("html_url")
+
+        if (html_url != null) {
+            webView.loadUrl(html_url);
+        } else {
+            webView.loadUrl("http://themekit.frontendmatter.com/dist/themes/social-1/profile.html");
+        }
     }
 }

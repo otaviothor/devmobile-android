@@ -23,8 +23,8 @@ class RepoListAdapter(context: Context, resource: Int, objects: List<IRepository
         repoNameTextView.text = repository?.full_name
 
         repoNameTextView.setOnClickListener {
-            val intent = Intent(context, ShowDataFromListActivity::class.java).apply {
-                putExtra("full_name", repository?.full_name)
+            val intent = Intent(context, DynamicWebviewActivity::class.java).apply {
+                putExtra("html_url", repository?.html_url)
             }
             context.startActivity(intent)
         }

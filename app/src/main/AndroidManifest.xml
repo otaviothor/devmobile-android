@@ -16,9 +16,6 @@
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
         <activity
-            android:name=".ShowDataFromListActivity"
-            android:exported="false" />
-        <activity
             android:name=".PassParamWithListActivity"
             android:exported="false" />
         <activity
